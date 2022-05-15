@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		35D795E7282F734700F123D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D795E6282F734700F123D8 /* AppDelegate.swift */; };
 		35D795E9282F734700F123D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D795E8282F734700F123D8 /* SceneDelegate.swift */; };
-		35D795EB282F734700F123D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D795EA282F734700F123D8 /* ViewController.swift */; };
+		35D795EB282F734700F123D8 /* IntroductionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D795EA282F734700F123D8 /* IntroductionViewController.swift */; };
 		35D795EE282F734700F123D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D795EC282F734700F123D8 /* Main.storyboard */; };
 		35D795F0282F734900F123D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D795EF282F734900F123D8 /* Assets.xcassets */; };
 		35D795F3282F734900F123D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D795F1282F734900F123D8 /* LaunchScreen.storyboard */; };
+		35D795FB283006DA00F123D8 /* GuessTheNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D795FA283006DA00F123D8 /* GuessTheNumberViewController.swift */; };
+		35D795FD2830ECE700F123D8 /* ComputerGuessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D795FC2830ECE700F123D8 /* ComputerGuessingViewController.swift */; };
+		35D7960628312DEE00F123D8 /* UserGuessingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D7960528312DEE00F123D8 /* UserGuessingViewController.swift */; };
+		35D7960828314B4200F123D8 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D7960728314B4200F123D8 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35D795E3282F734700F123D8 /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D795E6282F734700F123D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D795E8282F734700F123D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		35D795EA282F734700F123D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		35D795EA282F734700F123D8 /* IntroductionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionViewController.swift; sourceTree = "<group>"; };
 		35D795ED282F734700F123D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35D795EF282F734900F123D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35D795F2282F734900F123D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35D795F4282F734900F123D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35D795FA283006DA00F123D8 /* GuessTheNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessTheNumberViewController.swift; sourceTree = "<group>"; };
+		35D795FC2830ECE700F123D8 /* ComputerGuessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessingViewController.swift; sourceTree = "<group>"; };
+		35D7960528312DEE00F123D8 /* UserGuessingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGuessingViewController.swift; sourceTree = "<group>"; };
+		35D7960728314B4200F123D8 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		35D795E5282F734700F123D8 /* TestTask */ = {
 			isa = PBXGroup;
 			children = (
-				35D795E6282F734700F123D8 /* AppDelegate.swift */,
-				35D795E8282F734700F123D8 /* SceneDelegate.swift */,
-				35D795EA282F734700F123D8 /* ViewController.swift */,
-				35D795EC282F734700F123D8 /* Main.storyboard */,
-				35D795EF282F734900F123D8 /* Assets.xcassets */,
-				35D795F1282F734900F123D8 /* LaunchScreen.storyboard */,
-				35D795F4282F734900F123D8 /* Info.plist */,
+				35D795FE283107D700F123D8 /* ViewControllers */,
+				35D795FF2831081300F123D8 /* Storyboards */,
+				35D796012831087F00F123D8 /* App */,
+				35D796002831083500F123D8 /* Resources */,
 			);
 			path = TestTask;
+			sourceTree = "<group>";
+		};
+		35D795FE283107D700F123D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				35D795EA282F734700F123D8 /* IntroductionViewController.swift */,
+				35D795FA283006DA00F123D8 /* GuessTheNumberViewController.swift */,
+				35D795FC2830ECE700F123D8 /* ComputerGuessingViewController.swift */,
+				35D7960528312DEE00F123D8 /* UserGuessingViewController.swift */,
+				35D7960728314B4200F123D8 /* ResultViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		35D795FF2831081300F123D8 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				35D795EC282F734700F123D8 /* Main.storyboard */,
+				35D795F1282F734900F123D8 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		35D796002831083500F123D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35D795EF282F734900F123D8 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		35D796012831087F00F123D8 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				35D795E6282F734700F123D8 /* AppDelegate.swift */,
+				35D795E8282F734700F123D8 /* SceneDelegate.swift */,
+				35D795F4282F734900F123D8 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +181,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35D795EB282F734700F123D8 /* ViewController.swift in Sources */,
+				35D7960628312DEE00F123D8 /* UserGuessingViewController.swift in Sources */,
+				35D795EB282F734700F123D8 /* IntroductionViewController.swift in Sources */,
+				35D795FB283006DA00F123D8 /* GuessTheNumberViewController.swift in Sources */,
+				35D7960828314B4200F123D8 /* ResultViewController.swift in Sources */,
+				35D795FD2830ECE700F123D8 /* ComputerGuessingViewController.swift in Sources */,
 				35D795E7282F734700F123D8 /* AppDelegate.swift in Sources */,
 				35D795E9282F734700F123D8 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,7 +335,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TestTask/Info.plist;
+				INFOPLIST_FILE = TestTask/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,7 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PavelTkachev.TestTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,7 +354,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TestTask/Info.plist;
+				INFOPLIST_FILE = TestTask/App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,7 +363,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = PavelTkachev.TestTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
