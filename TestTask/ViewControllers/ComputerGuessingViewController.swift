@@ -8,6 +8,9 @@
 import UIKit
 
 class ComputerGuessingViewController: UIViewController {
+    
+    @IBOutlet var tryLabel: UILabel!
+    @IBOutlet var guessLabel: UILabel!
     @IBOutlet var moreButton: UIButton!
     @IBOutlet var equallyButton: UIButton!
     @IBOutlet var lessButton: UIButton!
@@ -20,22 +23,17 @@ class ComputerGuessingViewController: UIViewController {
         equallyButton.layer.cornerRadius = 10
         lessButton.layer.borderWidth = 1
         lessButton.layer.cornerRadius = 10
-       
-        
     }
-    
-    
     
     @IBAction func moreButtonPressed() {
     }
     @IBAction func equallyButtonPressed() {
     }
     @IBAction func lessButtonPressed() {
-      
     }
     
-  
-
+    
+    
 }
 // MARK: - Private Methods
 extension ComputerGuessingViewController {
@@ -46,3 +44,4 @@ extension ComputerGuessingViewController {
         present(alert, animated: true)
     }
 }
+

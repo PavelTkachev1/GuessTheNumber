@@ -13,11 +13,15 @@ class UserGuessingViewController: UIViewController {
     @IBOutlet var enterTheNumberTextField: UITextField!
     @IBOutlet var computerAnswerLabel: UILabel!
     @IBOutlet var guessButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         guessButton.layer.cornerRadius = 10
     }
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultViewController else { return }
+        resultVC.userCount = trys
+    }
     let computerNumber = Int.random(in: 1...100)
     var trys = 1
     
@@ -27,15 +31,15 @@ class UserGuessingViewController: UIViewController {
         if userNumber <= 0 || userNumber >= 101  {
             showAlert(title: "Error!", message: "Please, enter the number from 1 to 100")
         } else {
-            trys += 1
-            tryLabel.text = "Try № \(trys)"
             if userNumber > computerNumber {
                 computerAnswerLabel.text = "No, my number is less than yours"
             } else if userNumber < computerNumber {
                 computerAnswerLabel.text = "No, my number is more than yours"
             } else {
-                computerAnswerLabel.text = "You win"
+                performSegue(withIdentifier: "showScores", sender: nil)
             }
+            trys += 1
+            tryLabel.text = "Try № \(trys)"
         }
         enterTheNumberTextField?.text = ""
     }

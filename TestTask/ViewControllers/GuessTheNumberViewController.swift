@@ -15,8 +15,6 @@ class GuessTheNumberViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         enterTheNumberButton.layer.cornerRadius = 10
-//        enterTheNumberButton.isEnabled = false
-//        enterTheNumberButton.alpha = 0.5
     }
     
     @IBAction func guessTheNumberPressed() {

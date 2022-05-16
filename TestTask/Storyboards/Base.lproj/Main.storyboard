@@ -115,20 +115,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="38" translatesAutoresizingMaskIntoConstraints="NO" id="RAf-fl-yUN">
-                                <rect key="frame" x="59.5" y="689.5" width="295" height="134.5"/>
+                                <rect key="frame" x="59.5" y="688.5" width="295" height="135.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My number is ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNF-pR-AEu">
-                                        <rect key="frame" x="0.0" y="0.0" width="174.5" height="31.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="181" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="kjh-IZ-aZf">
-                                        <rect key="frame" x="0.0" y="69.5" width="295" height="65"/>
+                                        <rect key="frame" x="0.0" y="70.5" width="295" height="65"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTu-wD-YDz">
                                                 <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
-                                                <color key="backgroundColor" red="0.010502824559807777" green="0.98563867807388306" blue="0.70052164793014526" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="65" id="Bs4-rG-7YA"/>
                                                     <constraint firstAttribute="width" constant="65" id="e4c-ZF-nXA"/>
@@ -144,7 +143,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKL-cF-Nr8">
                                                 <rect key="frame" x="115" y="0.0" width="65" height="65"/>
-                                                <color key="backgroundColor" red="0.0016184096457436681" green="0.99728697538375854" blue="0.71077245473861694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="65" id="Sv7-TZ-vzc"/>
                                                     <constraint firstAttribute="height" constant="65" id="Xpl-QO-0Js"/>
@@ -161,7 +159,6 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucl-Lh-Vzu">
                                                 <rect key="frame" x="230" y="0.0" width="65" height="65"/>
-                                                <color key="backgroundColor" red="0.0016184096457436681" green="0.99728697538375854" blue="0.71077245473861694" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="65" id="ZEO-3X-hyO"/>
                                                     <constraint firstAttribute="height" constant="65" id="pUs-hb-9Vx"/>
@@ -183,23 +180,23 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="y3C-vd-OFN">
-                                <rect key="frame" x="53" y="134" width="308" height="181.5"/>
+                                <rect key="frame" x="53" y="134" width="308" height="167.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try №" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bco-cO-Rtu">
-                                        <rect key="frame" x="112.5" y="0.0" width="83" height="38.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try № 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="bco-cO-Rtu">
+                                        <rect key="frame" x="102" y="0.0" width="104.5" height="38.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Computer is guessing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0Fy-Rh-hna">
-                                        <rect key="frame" x="0.0" y="70.5" width="308" height="39.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                        <rect key="frame" x="27.5" y="70.5" width="253" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your number is - 80?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1oj-VK-1XU">
-                                        <rect key="frame" x="6" y="142" width="296" height="39.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your number is - 50?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1oj-VK-1XU">
+                                        <rect key="frame" x="32.5" y="135" width="243" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -219,8 +216,10 @@
                     </view>
                     <connections>
                         <outlet property="equallyButton" destination="oKL-cF-Nr8" id="fgi-My-sBK"/>
+                        <outlet property="guessLabel" destination="oUh-ID-CN3" id="A24-GQ-cxm"/>
                         <outlet property="lessButton" destination="ucl-Lh-Vzu" id="SAL-e0-aIl"/>
                         <outlet property="moreButton" destination="hTu-wD-YDz" id="F7a-B3-NSH"/>
+                        <outlet property="tryLabel" destination="oUh-ID-CN3" id="S96-pc-nz9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1f-fI-W8y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -235,44 +234,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleAspectFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Itd-aa-WRf">
-                                <rect key="frame" x="25" y="679" width="364" height="41"/>
-                                <color key="backgroundColor" red="0.22232314810000001" green="0.25415379049999998" blue="0.78370064500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="215" id="qif-Oh-0ps"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="gfg">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="guessButtonPressed" destination="mUF-w3-icc" eventType="touchUpInside" id="xCI-9z-QXB"/>
-                                    <action selector="guessTheNumberPressed" destination="pjU-Pe-9fi" eventType="touchUpInside" id="mu6-j1-ulo"/>
-                                    <segue destination="tJd-dQ-U4o" kind="presentation" modalPresentationStyle="fullScreen" id="NN5-0g-3jm"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="X1i-Yd-a2t">
-                                <rect key="frame" x="96" y="121" width="222" height="88.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try № 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="46u-pU-hyf">
-                                        <rect key="frame" x="63.5" y="0.0" width="95" height="35"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are is guessing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Yqp-Bk-NNU">
-                                        <rect key="frame" x="0.0" y="56" width="222" height="32.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="ngd-0i-jBs">
-                                <rect key="frame" x="25" y="341" width="364" height="234.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="ngd-0i-jBs">
+                                <rect key="frame" x="72" y="401" width="270" height="234.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the number" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fA9-dd-8eU">
-                                        <rect key="frame" x="0.0" y="0.0" width="364" height="45.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="270" height="45.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <connections>
@@ -280,7 +246,7 @@
                                         </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yr0-gj-4Uo">
-                                        <rect key="frame" x="0.0" y="94.5" width="364" height="41"/>
+                                        <rect key="frame" x="0.0" y="94.5" width="270" height="41"/>
                                         <color key="backgroundColor" red="0.22232314810000001" green="0.25415379049999998" blue="0.78370064500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Guess">
@@ -292,7 +258,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RbI-x5-H4S">
-                                        <rect key="frame" x="0.0" y="184.5" width="364" height="50"/>
+                                        <rect key="frame" x="0.0" y="184.5" width="270" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="9rP-DK-xCo"/>
                                         </constraints>
@@ -302,15 +268,32 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="X1i-Yd-a2t">
+                                <rect key="frame" x="49" y="119" width="316" height="88.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try № 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="46u-pU-hyf">
+                                        <rect key="frame" x="110.5" y="0.0" width="95" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are is guessing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Yqp-Bk-NNU">
+                                        <rect key="frame" x="47" y="56" width="222" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6kX-gP-RID"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6kX-gP-RID" firstAttribute="trailing" secondItem="ngd-0i-jBs" secondAttribute="trailing" constant="25" id="PdB-5D-BCr"/>
-                            <constraint firstItem="X1i-Yd-a2t" firstAttribute="top" secondItem="6kX-gP-RID" secondAttribute="top" constant="77" id="Wnb-QC-Gtv"/>
-                            <constraint firstItem="6kX-gP-RID" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ngd-0i-jBs" secondAttribute="bottom" constant="100" id="YQi-2s-qE9"/>
-                            <constraint firstItem="ngd-0i-jBs" firstAttribute="leading" secondItem="6kX-gP-RID" secondAttribute="leading" constant="25" id="ZtW-AN-KXX"/>
-                            <constraint firstItem="X1i-Yd-a2t" firstAttribute="centerX" secondItem="ezj-oO-sJu" secondAttribute="centerX" id="nHu-Rd-oZw"/>
+                            <constraint firstItem="ngd-0i-jBs" firstAttribute="centerY" secondItem="ezj-oO-sJu" secondAttribute="centerY" constant="70" id="HkC-H9-iha"/>
+                            <constraint firstItem="ngd-0i-jBs" firstAttribute="centerX" secondItem="ezj-oO-sJu" secondAttribute="centerX" id="OJ3-UZ-akH"/>
+                            <constraint firstItem="X1i-Yd-a2t" firstAttribute="leading" secondItem="6kX-gP-RID" secondAttribute="leading" constant="49" id="Qus-7T-7I3"/>
+                            <constraint firstItem="X1i-Yd-a2t" firstAttribute="top" secondItem="6kX-gP-RID" secondAttribute="top" constant="75" id="nCY-zH-et5"/>
+                            <constraint firstItem="6kX-gP-RID" firstAttribute="trailing" secondItem="X1i-Yd-a2t" secondAttribute="trailing" constant="49" id="rfz-ZG-HH8"/>
                         </constraints>
                     </view>
                     <connections>
@@ -413,9 +396,6 @@
             <point key="canvasLocation" x="3040.579710144928" y="91.741071428571431"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="NN5-0g-3jm"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
