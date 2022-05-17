@@ -17,14 +17,19 @@ class GuessTheNumberViewController: UIViewController {
         enterTheNumberButton.layer.cornerRadius = 10
     }
     
+    var guessNumber = 0
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let computerGuessingVC = segue.destination as? ComputerGuessingViewController else { return }
+        computerGuessingVC.number = guessNumber
+    }
+    
     @IBAction func guessTheNumberPressed() {
-        let guessNumber = Int(guessTheNumberTextField.text ?? "") ?? 0
+        guessNumber = Int(guessTheNumberTextField.text ?? "") ?? 0
         if guessNumber <= 0 || guessNumber >= 101  {
             showAlert(title: "Error!", message: "Please, enter the number from 1 to 100")
         }
     }
-    
-    
 }
 
 // MARK: - Private Methods
@@ -44,5 +49,4 @@ extension GuessTheNumberViewController: UITextFieldDelegate {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
-    
 }

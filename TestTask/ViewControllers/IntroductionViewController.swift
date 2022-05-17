@@ -8,7 +8,7 @@
 import UIKit
 
 class IntroductionViewController: UIViewController {
-
+    
     @IBOutlet var startNewGameButton: UIButton!
     
     override func viewDidLoad() {
@@ -17,7 +17,5 @@ class IntroductionViewController: UIViewController {
     }
     
     @IBAction func unwind(segue: UIStoryboardSegue) {}
-
-
 }
 

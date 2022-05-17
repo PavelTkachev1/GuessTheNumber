@@ -138,7 +138,7 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="moreButtonPressed" destination="mqk-EN-BPZ" eventType="touchUpInside" id="GhG-Tj-iXz"/>
+                                                    <action selector="moreButtonPressed" destination="mqk-EN-BPZ" eventType="touchUpInside" id="mS5-VG-XES"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKL-cF-Nr8">
@@ -216,10 +216,10 @@
                     </view>
                     <connections>
                         <outlet property="equallyButton" destination="oKL-cF-Nr8" id="fgi-My-sBK"/>
-                        <outlet property="guessLabel" destination="oUh-ID-CN3" id="A24-GQ-cxm"/>
+                        <outlet property="guessLabel" destination="1oj-VK-1XU" id="9B0-i7-RSa"/>
                         <outlet property="lessButton" destination="ucl-Lh-Vzu" id="SAL-e0-aIl"/>
                         <outlet property="moreButton" destination="hTu-wD-YDz" id="F7a-B3-NSH"/>
-                        <outlet property="tryLabel" destination="oUh-ID-CN3" id="S96-pc-nz9"/>
+                        <outlet property="tryLabel" destination="bco-cO-Rtu" id="esu-t1-cO5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1f-fI-W8y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -297,10 +297,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="attemptLabel" destination="46u-pU-hyf" id="14Z-HV-4aO"/>
                         <outlet property="computerAnswerLabel" destination="RbI-x5-H4S" id="RcV-a6-h0V"/>
                         <outlet property="enterTheNumberTextField" destination="fA9-dd-8eU" id="Xgk-GX-waV"/>
                         <outlet property="guessButton" destination="yr0-gj-4Uo" id="dmn-f1-tmi"/>
-                        <outlet property="tryLabel" destination="46u-pU-hyf" id="14Z-HV-4aO"/>
                         <segue destination="tJd-dQ-U4o" kind="presentation" identifier="showScores" modalPresentationStyle="fullScreen" id="XIW-TK-ULX"/>
                     </connections>
                 </viewController>

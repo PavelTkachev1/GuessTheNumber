@@ -15,6 +15,8 @@ class ComputerGuessingViewController: UIViewController {
     @IBOutlet var equallyButton: UIButton!
     @IBOutlet var lessButton: UIButton!
     
+    var number: Int!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         moreButton.layer.borderWidth = 1
@@ -25,16 +27,42 @@ class ComputerGuessingViewController: UIViewController {
         lessButton.layer.cornerRadius = 10
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let userGuessingVC = segue.destination as? UserGuessingViewController else { return }
+        userGuessingVC.computerGuess = attempt
+    }
+    
+    var attempt = 1
+    var min = 0
+    var max = 100
+    var middle: Int {
+        (min + max) / 2
+    }
+    
     @IBAction func moreButtonPressed() {
+        if middle > number {
+            showAlert(title: "Don't cheat!", message: "Your number is less than \(middle)")
+        } else {
+            min = middle
+            guessLabel.text = "Your number is - \(middle)?"
+            attempt += 1
+            tryLabel.text = " Try № \(attempt)"
+        }
     }
     @IBAction func equallyButtonPressed() {
     }
     @IBAction func lessButtonPressed() {
+        if middle < number {
+            showAlert(title: "Don't cheat!", message: "Your number is more than \(middle)")
+        } else {
+            max = middle
+            guessLabel.text = "Your number is - \(middle)?"
+            attempt += 1
+            tryLabel.text = " Try № \(attempt)"
+        }
     }
-    
-    
-    
 }
+
 // MARK: - Private Methods
 extension ComputerGuessingViewController {
     private func showAlert(title: String, message: String) {

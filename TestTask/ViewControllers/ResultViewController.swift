@@ -20,7 +20,6 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mainMenuButton.layer.cornerRadius = 10
-        computerCount = 5
         userCountLabel.text = "Your's tries count: \(userCount ?? 0)"
         computerCountLabel.text = "Computer's tries count: \(computerCount ?? 0)"
         
@@ -32,8 +31,4 @@ class ResultViewController: UIViewController {
             resultLabel.text = "Draw"
         }
     }
-    
-    
-    
-    
 }
