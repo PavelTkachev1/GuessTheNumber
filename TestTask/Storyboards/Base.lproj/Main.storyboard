@@ -153,7 +153,7 @@
                                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="equallyButtonPressed" destination="mqk-EN-BPZ" eventType="touchUpInside" id="qc7-nR-OJv"/>
+                                                    <action selector="equallyButtonPressed" destination="mqk-EN-BPZ" eventType="touchUpInside" id="5tE-3g-b4s"/>
                                                     <segue destination="mUF-w3-icc" kind="presentation" modalPresentationStyle="fullScreen" id="UOM-KO-QAk"/>
                                                 </connections>
                                             </button>

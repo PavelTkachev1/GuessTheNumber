@@ -33,30 +33,36 @@ class ComputerGuessingViewController: UIViewController {
     }
     
     var attempt = 1
-    var min = 0
-    var max = 100
-    var middle: Int {
-        (min + max) / 2
+    var minimumNumber: Float = 0
+    var maximumNumber: Float = 100
+    var middleNumber: Float {
+        round((minimumNumber + maximumNumber) / 2)
     }
     
     @IBAction func moreButtonPressed() {
-        if middle > number {
-            showAlert(title: "Don't cheat!", message: "Your number is less than \(middle)")
+        if Int(middleNumber) > number || Int(middleNumber) == number  {
+            showAlert(title: "Error!", message: "Don't cheat.")
         } else {
-            min = middle
-            guessLabel.text = "Your number is - \(middle)?"
+            minimumNumber = middleNumber
+            guessLabel.text = "Your number is - \(Int(middleNumber))?"
             attempt += 1
             tryLabel.text = " Try № \(attempt)"
         }
+        
     }
+    
     @IBAction func equallyButtonPressed() {
+        if Int(middleNumber) != number {
+            showAlert(title: "Error!", message: "The computer didn't guess your number.")
+        }
     }
+    
     @IBAction func lessButtonPressed() {
-        if middle < number {
-            showAlert(title: "Don't cheat!", message: "Your number is more than \(middle)")
+        if Int(middleNumber) < number || Int(middleNumber) == number {
+            showAlert(title: "Error!", message: "Don't cheat.")
         } else {
-            max = middle
-            guessLabel.text = "Your number is - \(middle)?"
+            maximumNumber = middleNumber
+            guessLabel.text = "Your number is - \(Int(middleNumber))?"
             attempt += 1
             tryLabel.text = " Try № \(attempt)"
         }
